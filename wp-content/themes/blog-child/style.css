@@ -469,7 +469,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: #eff6ff;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -695,11 +695,8 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 37.5em) {
-	.menu-toggle {
+	.main-navigation {
 		display: none;
-	}
-	.main-navigation ul {
-		display: block;
 	}
 }
 
@@ -990,8 +987,8 @@ custom style
 
 .site-header {
 	box-sizing: border-box;
-	padding: 0 10px;
-	background-color: #eff6ff;
+	padding: 0 5%;
+	background-color: #110c43;
 }
 
 .site-branding {
@@ -1019,3 +1016,79 @@ custom style
 	display: block;
 }
 
+
+
+
+.menu-mobile {
+	display: none;
+	text-align: center;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+}
+
+.site-title a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu-item a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: solid 1px #c51941;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+	font-size: 0.7rem;
+}
+
+.menu-item a:hover{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: solid 1px #00F0B5;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width: 37.5em) {
+	.menu-mobile[aria-expanded="true"]{
+		display: block;
+	}
+	
+	.menu-mobile[aria-expanded="false"]{
+		display: none;
+	}
+
+	.menu-toggle {
+		background-color: #EC0B43;
+		color: white;
+    	border: solid 1px black;
+	}
+
+	.menu-mobile {
+		margin-bottom: 20px;
+	}
+
+	.menu li {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-mobile {
+		display: inline-block;
+		width: 39%;
+		text-align: right;
+	}
+
+	.menu li {
+		display: inline-block;
+		margin-left: 25px;
+	}
+	
+}
