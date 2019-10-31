@@ -996,7 +996,11 @@ body {
 .site-header {
 	box-sizing: border-box;
 	padding: 0 5%;
-	background-color: #110c43;
+	background-color: #eff6ff;
+	position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .site-branding {
@@ -1008,7 +1012,7 @@ body {
 .main-navigation {
 	width: 27%;
 	float: right;
-	margin-top: 13px;
+	margin-top: 17px;
 }
 
 .search-field {
@@ -1038,12 +1042,13 @@ body {
 }
 
 .site-title a {
-	color: white;
+	color: black;
 	text-decoration: none;
+	font-size: 1.5em;
 }
 
 .menu-item a {
-	color: #fff;
+	color: black;
 	text-decoration: none;
 	text-transform: uppercase;
 	border-bottom: solid 1px #c51941;
@@ -1053,7 +1058,7 @@ body {
 }
 
 .menu-item a:hover{
-	color: #fff;
+	color: black;
 	text-decoration: none;
 	text-transform: uppercase;
 	border-bottom: solid 1px #00F0B5;
@@ -1070,13 +1075,18 @@ body {
 	background-color: #ffffff;
 	padding: 25px;
 	margin-bottom: 5%;
-	border: 1px solid;
+
 }
 
 .post-title {
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	display: block;
 	line-height: 1em;
+}
+
+.post-date {
+	font-size: 0.8em;
+	color: gray;
 }
 
 .post-title a {
@@ -1090,7 +1100,8 @@ body {
 
 .post-category a {
 	text-decoration: none;
-	color: black
+	color: black;
+	background-color: #00F0B5;
 }
 
 .posts-filter {
@@ -1098,8 +1109,10 @@ body {
 }
 
 .site-content {
-	padding: 0 5%
+	padding: 0 5%;
+	margin-top: 60px;
 }
+
 
 @media screen and (max-width: 37.5em) {
 	.menu-mobile[aria-expanded="true"]{
@@ -1135,6 +1148,16 @@ body {
 	.menu li {
 		display: inline-block;
 		margin-left: 25px;
+	}
+
+	.posts-container {
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-gap: 20px;
+	}
+
+	.posts-filter {
+		padding: 0 34%;
 	}
 	
 }

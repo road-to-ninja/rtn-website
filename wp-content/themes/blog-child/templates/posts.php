@@ -24,7 +24,7 @@ get_header();
                     
                     <div class="post-card">
                          <span class="post-title">
-                              <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                              <a href="<?php the_permalink() ?>"><?php echo ucfirst(get_the_title()); ?></a>
                          </span>
                          <span class="post-date">
                               <?php echo the_date() ?>
