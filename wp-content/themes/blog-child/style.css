@@ -1113,6 +1113,17 @@ body {
 	margin-top: 60px;
 }
 
+.site-footer {
+	background-color: black;
+    color: white;
+    position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	min-height: 40px;
+	vertical-align: middle;
+}
+
 
 @media screen and (max-width: 37.5em) {
 	.menu-mobile[aria-expanded="true"]{
