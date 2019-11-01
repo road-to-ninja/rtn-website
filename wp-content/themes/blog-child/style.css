@@ -1259,6 +1259,10 @@ article.comment-body {
 }
 
 @media screen and (min-width: 769px) {
+
+	.page-container {
+		margin: 0 8%
+	}
 	
 	.menu-mobile {
 		display: inline-block;
@@ -1289,6 +1293,9 @@ article.comment-body {
 }
 
 @media screen and (min-width: 1024px) {
+	.page-container {
+		margin: 0 15%
+	}
 	.content-area {
 		width: 50%;
 	}
