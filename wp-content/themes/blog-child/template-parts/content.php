@@ -8,9 +8,7 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-<div class="post-card">
+<article class="post-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                          <span class="post-title">
                               <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                          </span>
@@ -44,5 +42,5 @@
                                    <?php endforeach; ?>
                               <?php endif; ?>
                          </div>
-                    </div>
+                
 </article><!-- #post-<?php the_ID(); ?> -->

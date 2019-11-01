@@ -700,7 +700,7 @@ a:hover, a:active {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 768px) {
 	.main-navigation {
 		display: none;
 	}
@@ -993,6 +993,7 @@ custom style
 
 html {
 	height: 100%;
+	font-size: 16px;
 }
 body {
 	font-size: 16px;
@@ -1164,11 +1165,11 @@ input.search-field {
 .cotent {
 	height: 100%;
 }
-.site-main article {
+.post {
 	padding: 0 10%;
     padding-top: 5%;
-    background-color: white;
-    border: 1px solid #d1dbe4;
+	background-color: white;
+	box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
 }
 
 .entry-title {
@@ -1198,14 +1199,21 @@ input.search-field {
 }
 
 .depth-2 {
-	margin: 10px 0 10px 10px;
+	margin: 10px 0 10px 20px;
 }
 
 .comment {
 	margin-bottom: 10px;;
 }
 
-@media screen and (max-width: 37.5em) {
+article.comment-body {
+	padding: 5%;
+    background-color: white;;
+	border-left: 2px solid;
+	box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
+}
+
+@media screen and (max-width: 768px) {
 
 	.site-title a {
 		font-size: 1.2em;
@@ -1241,12 +1249,17 @@ input.search-field {
 		font-size: 1rem;
 	}
 
-	.site-main article {
+	.post {
 		padding: 10% 5% 0;
+	}
+
+	article.post-card {
+		padding: 5% 10%;
 	}
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 769px) {
+	
 	.menu-mobile {
 		display: inline-block;
 		width: 39%;
@@ -1269,8 +1282,14 @@ input.search-field {
 	}
 
 	.content-area {
-		margin: 0 15%;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
+}
 
-	
+@media screen and (min-width: 1024px) {
+	.content-area {
+		width: 50%;
+	}
 }
