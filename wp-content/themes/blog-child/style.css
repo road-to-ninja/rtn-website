@@ -991,13 +991,12 @@ object {
 custom style
 **/
 
-
+html {
+	height: 100%;
+}
 body {
 	font-size: 16px;
 	position: relative;
-}
-
-body {
 	height: 100%;
 }
 
@@ -1100,7 +1099,6 @@ input.search-field {
 	padding: 25px;
 	margin-bottom: 5%;
 	border: 1px solid #d1dbe4;
-
 }
 
 .post-title {
@@ -1148,7 +1146,6 @@ input.search-field {
 .site-content {
 	padding: 0 3%;
 	margin-top: 100px;
-	margin-bottom: 60px;
 	height: 100%;
 }
 
@@ -1272,11 +1269,8 @@ input.search-field {
 	}
 
 	.content-area {
-		padding: 0 15%
+		margin: 0 15%;
 	}
 
-	.site-content {
-		padding: 0 15%;
-	}
 	
 }
