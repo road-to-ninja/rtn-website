@@ -1171,8 +1171,7 @@ input.search-field {
 	height: 100%;
 }
 .post {
-	padding: 0 10%;
-    padding-top: 5%;
+	padding: 5% 10% 3%;
 	background-color: white;
 	box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
 }
