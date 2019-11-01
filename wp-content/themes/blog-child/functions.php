@@ -168,3 +168,5 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 add_filter( 'excerpt_length', function($length) {
     return 2;
 } );
+
+add_theme_support( 'post-thumbnails' );
