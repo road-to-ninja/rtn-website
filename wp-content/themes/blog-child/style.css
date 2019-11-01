@@ -68,6 +68,13 @@ html {
 
 body {
 	margin: 0;
+	font-size: 22px;
+	min-height: 100%;
+	height: 100%;
+}
+
+* {
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 /**
@@ -457,9 +464,6 @@ big {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-html {
-	box-sizing: border-box;
-}
 
 *,
 *:before,
@@ -469,7 +473,9 @@ html {
 }
 
 body {
-	background: #eff6ff;
+	background: #fcfbff;
+	min-height:100%; 
+    position:relative;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -985,22 +991,25 @@ object {
 custom style
 **/
 
-html {
-	min-height: 100%;
-}
 
 body {
 	font-size: 16px;
+	position: relative;
+}
+
+body {
+	height: 100%;
 }
 
 .site-header {
 	box-sizing: border-box;
 	padding: 0 5%;
-	background-color: #eff6ff;
+	background-color: #132634;
 	position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+	z-index: 1;
+	border-bottom: 1px solid #d7d2d2;
 }
 
 .site-branding {
@@ -1008,6 +1017,9 @@ body {
 	width: 60%;
 }
 
+.site {
+	height: 100%;
+}
 
 .main-navigation {
 	width: 27%;
@@ -1015,8 +1027,15 @@ body {
 	margin-top: 17px;
 }
 
-.search-field {
-	width: 100%
+input.search-field {
+	width: 100%;
+	border-radius: 0px;
+
+}
+
+.search-field:focus {
+	border: 1px solid #31a89b;
+	outline-width: 0;
 }
 
 .menu-toggle {
@@ -1028,7 +1047,10 @@ body {
 	display: block;
 }
 
-
+.entry-date {
+	text-decoration: none;
+	color: black;
+}
 
 
 .menu-mobile {
@@ -1042,23 +1064,25 @@ body {
 }
 
 .site-title a {
-	color: black;
+	color: white;
 	text-decoration: none;
 	font-size: 1.5em;
 }
+.site-title a:hover {
+	color: rgb(219, 11, 105);
+}
 
 .menu-item a {
-	color: black;
+	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 	border-bottom: solid 1px #c51941;
 	padding-bottom: 5px;
 	box-sizing: border-box;
-	font-size: 0.7rem;
+	font-size: 0.9rem;
 }
 
 .menu-item a:hover{
-	color: black;
 	text-decoration: none;
 	text-transform: uppercase;
 	border-bottom: solid 1px #00F0B5;
@@ -1075,6 +1099,7 @@ body {
 	background-color: #ffffff;
 	padding: 25px;
 	margin-bottom: 5%;
+	border: 1px solid #d1dbe4;
 
 }
 
@@ -1090,6 +1115,8 @@ body {
 }
 
 .post-title a {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
 	text-decoration: none;
 	color: black;
 }
@@ -1098,10 +1125,20 @@ body {
 	margin-top: 20px;
 }
 
-.post-category a {
-	text-decoration: none;
-	color: black;
+.post-category {
 	background-color: #00F0B5;
+	margin-left: 5px;
+	padding: 1px 7px;
+}
+
+.post-category a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.post-category:hover {
+	background-color: rgb(219, 11, 105);
+	color: white;
 }
 
 .posts-filter {
@@ -1109,23 +1146,74 @@ body {
 }
 
 .site-content {
-	padding: 0 5%;
-	margin-top: 60px;
+	padding: 0 3%;
+	margin-top: 100px;
+	margin-bottom: 60px;
+	height: 100%;
 }
 
 .site-footer {
-	background-color: black;
+	background-color: #132634;
     color: white;
-    position: fixed;
-	bottom: 0;
 	width: 100%;
 	text-align: center;
 	min-height: 40px;
 	vertical-align: middle;
+	bottom: 0;
+	position: absolute;
+	bottom: 0;
 }
 
+.cotent {
+	height: 100%;
+}
+.site-main article {
+	padding: 0 10%;
+    padding-top: 5%;
+    background-color: white;
+    border: 1px solid #d1dbe4;
+}
+
+.entry-title {
+	font-size: calc(1.85vw + 25px);
+	margin: 0;
+}
+
+.tcat-links {
+	display: inline-block;
+}
+
+.entry-meta {
+	color: grey;
+}
+
+.posted-on a {
+	text-decoration: none;
+}
+
+.category-container-post {
+	margin-top: 10px;
+}
+
+.entry-content {
+	margin: 50px 0;
+	overflow-wrap: break-word;
+}
+
+.depth-2 {
+	margin: 10px 0 10px 10px;
+}
+
+.comment {
+	margin-bottom: 10px;;
+}
 
 @media screen and (max-width: 37.5em) {
+
+	.site-title a {
+		font-size: 1.2em;
+	}
+
 	.menu-mobile[aria-expanded="true"]{
 		display: block;
 	}
@@ -1135,9 +1223,13 @@ body {
 	}
 
 	.menu-toggle {
-		background-color: #EC0B43;
 		color: white;
-    	border: solid 1px black;
+		background-color: rgb(219, 11, 105);
+	}
+
+	.menu-toggle:hover {
+		color: black;
+		background-color: #00F0B5;
 	}
 
 	.menu-mobile {
@@ -1146,6 +1238,14 @@ body {
 
 	.menu li {
 		margin-bottom: 10px;
+	}
+
+	.entry-content {
+		font-size: 1rem;
+	}
+
+	.site-main article {
+		padding: 10% 5% 0;
 	}
 }
 
@@ -1169,6 +1269,14 @@ body {
 
 	.posts-filter {
 		padding: 0 34%;
+	}
+
+	.content-area {
+		padding: 0 15%
+	}
+
+	.site-content {
+		padding: 0 15%;
 	}
 	
 }
