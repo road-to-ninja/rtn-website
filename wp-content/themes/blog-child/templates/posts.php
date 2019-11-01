@@ -11,6 +11,34 @@ get_header();
 ?>
 
 <div class="page-container">
+          <div class="author">
+              <img class="author-profil" src=""alt="">
+              <p class="description-site">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Nam congue sem eget bibendum rhoncus. Sed eu luctus ligula, in 
+                   fringilla tortor. Vestibulum eget mauris quam. Suspendisse faucibus.</p>
+              <p class="author-links">
+                   <a class="link-sources" href="//github.com/blade-sensei" target="_blank" rel="noopener noreferrer">
+                         <img class="link-icons" src="<?php bloginfo('template_url')?>/images/github.png"
+                         alt="github"
+                         sizes="(max-width: 32px) 100vw, 32px"
+                         width="32">
+                   </a>
+                   
+                   <a class="link-sources"  href="//linkedin.com/in/juan-carlos-coyla-30b9b4109/" target="_blank" rel="noopener noreferrer">
+                         <img class="link-icons" src="<?php bloginfo('template_url')?>/images/linkedin.png"
+                         alt="linkedin"
+                         sizes="(max-width: 32px) 100vw, 32px"
+                         width="32">
+                   </a>
+                   <a class="link-sources" href="//www.npmjs.com/~blade-sensei" target="_blank" rel="noopener noreferrer">
+                         <img class="link-icons" src="<?php bloginfo('template_url')?>/images/npm.jpg"
+                         alt="npm"
+                         sizes="(max-width: 32px) 100vw, 32px"
+                         width="32">
+                   </a>
+              </p>
+          </div>
+
          <div class="posts-filter">
               <?php get_search_form() ?>
          </div>

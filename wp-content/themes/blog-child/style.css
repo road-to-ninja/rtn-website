@@ -68,7 +68,6 @@ html {
 
 body {
 	margin: 0;
-	font-size: 22px;
 	min-height: 100%;
 	height: 100%;
 }
@@ -1142,6 +1141,7 @@ input.search-field {
 
 .posts-filter {
 	margin: 20px 0;
+	box-sizing: border-box;
 }
 
 .site-content {
@@ -1206,6 +1206,10 @@ input.search-field {
 	margin-bottom: 10px;;
 }
 
+.commentform input {
+	width: 100%;
+}
+
 article.comment-body {
 	padding: 5%;
     background-color: white;;
@@ -1213,7 +1217,27 @@ article.comment-body {
 	box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
 }
 
+.description-site {
+	margin-left: auto;
+    width: 60%;
+	margin-right: auto;
+	font-size: 1.1em;
+}
+
+.author {
+	text-align: center;
+}
+
+.link-sources {
+	text-decoration: none;
+	margin-left: 5px;
+}
+
 @media screen and (max-width: 768px) {
+
+	.description-site {
+		width: 95%;
+	}
 
 	.site-title a {
 		font-size: 1.2em;
