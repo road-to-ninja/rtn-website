@@ -1075,7 +1075,7 @@ input.search-field {
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
-	border-bottom: solid 1px #c51941;
+	border-bottom: solid 2px #db0b69;
 	padding-bottom: 5px;
 	box-sizing: border-box;
 	font-size: 0.9rem;
@@ -1216,10 +1216,24 @@ input.search-field {
 }
 
 article.comment-body {
-	padding: 5%;
+	padding: 3%;
     background-color: white;;
 	border-left: 2px solid;
 	box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
+}
+
+.comment-reply-link {
+	text-decoration: none;
+	background-color: #00F0B5;
+    color: #132634;
+	padding: 5px 15px;
+	font-size: 0.8em;
+}
+
+.comment-metadata a {
+	text-decoration: none;
+	color: gray;
+	font-size: 0.9em;
 }
 
 .description-site {
