@@ -6,7 +6,6 @@
  *
  * @package blog
  */
-
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
 function enqueue_parent_styles() {
@@ -170,3 +169,20 @@ add_filter( 'excerpt_length', function($length) {
 } );
 
 add_theme_support( 'post-thumbnails' );
+
+add_action('wp_head','my_analytics', 20);
+
+function my_analytics() {
+ ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145450683-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145450683-1');
+</script>
+
+<?php
+ }
