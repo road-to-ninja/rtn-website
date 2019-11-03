@@ -19,8 +19,6 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('WP_CACHE', true);
-define( 'WPCACHEHOME', '/var/www/wordpress/wp-content/plugins/wp-super-cache/' );
 define( 'DB_NAME', 'wp_rtn' );
 
 /** Utilisateur de la base de données MySQL. */
@@ -84,8 +82,7 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
-define('COOKIE_DOMAIN', '');
+define('WP_DEBUG', true);
 /* C’est tout, ne touchez pas à ce qui suit ! Bonne publication. */
 
 /** Chemin absolu vers le dossier de WordPress. */
