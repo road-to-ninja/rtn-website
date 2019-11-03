@@ -21,7 +21,7 @@
 /** Nom de la base de données de WordPress. */
 define('WP_CACHE', true);
 define( 'WPCACHEHOME', '/var/www/wordpress/wp-content/plugins/wp-super-cache/' );
-define( 'DB_NAME', 'wordpress' );
+define( 'DB_NAME', 'wp_rtn' );
 
 /** Utilisateur de la base de données MySQL. */
 define( 'DB_USER', 'wpuser' );
@@ -30,7 +30,7 @@ define( 'DB_USER', 'wpuser' );
 define( 'DB_PASSWORD', 'password' );
 
 /** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'localhost:3306' );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
