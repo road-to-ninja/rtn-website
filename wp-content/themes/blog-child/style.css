@@ -1,4 +1,4 @@
-/*!
+/*
 Theme Name: blog-child
 Theme URI: http://underscores.me/
 Author: Underscores.me
@@ -544,6 +544,7 @@ input[type="submit"] {
 	font-size: 0.75rem;
 	line-height: 1;
 	padding: .6em 1em .4em;
+	outline: none;
 }
 
 button:hover,
@@ -1033,7 +1034,7 @@ input.search-field {
 }
 
 .search-field:focus {
-	border: 1.3px solid #00F0B5;
+	border: 1.3px solid #db0b69;
 	outline-width: 0;
 }
 
@@ -1151,7 +1152,7 @@ input.search-field {
 
 .site-content {
 	padding: 0 3%;
-	margin-top: 80px;
+	margin-top: 71px;
 	height: 100%;
 }
 
@@ -1253,6 +1254,13 @@ article.comment-body {
 	margin-left: 5px;
 }
 
+input.submit {
+	background-color: #00F0B5;
+	color: #132634;
+	padding: 8px 15px;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
 
 	.description-site {
@@ -1274,6 +1282,7 @@ article.comment-body {
 	.menu-toggle {
 		color: white;
 		background-color: rgb(219, 11, 105);
+		cursor: pointer;
 	}
 
 	.menu-toggle:hover {
