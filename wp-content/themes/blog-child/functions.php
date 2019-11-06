@@ -137,6 +137,12 @@ function blog_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'blog_scripts' );
 
+function child_theme_scripts() {
+	wp_enqueue_script('child-scripts', get_template_directory_uri() . '/js/child.js');
+}
+
+add_action('wp_enqueue_scripts', 'child_theme_scripts');
+
 /**
  * Implement the Custom Header feature.
  */

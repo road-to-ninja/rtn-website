@@ -9,7 +9,7 @@
 
 ?>
 
-<article class="post-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="post-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?> onclick="redirectToPostPage('<?php the_permalink(); ?>')">
                          <span class="post-title">
                               <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                          </span>

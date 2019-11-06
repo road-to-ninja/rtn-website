@@ -50,7 +50,7 @@ get_header();
                     
                     $the_query->the_post(); ?>
                     
-                    <div class="post-card">
+                    <div class="post-card" onclick="redirectToPostPage('<?php the_permalink(); ?>')">
                          <span class="post-title">
                               <a href="<?php the_permalink() ?>"><?php echo ucfirst(get_the_title()); ?></a>
                          </span>
