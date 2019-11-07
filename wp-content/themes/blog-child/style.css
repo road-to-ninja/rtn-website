@@ -1134,7 +1134,7 @@ input.search-field {
 .post-category {
 	background-color: rgb(0, 240, 181);
     margin-left: 5px;
-    padding: .5em;
+    padding: .4em;
     border-radius: 3px;
 }
 
@@ -1288,7 +1288,8 @@ span.post-tags {
     color: black;
     background-color: #f5f5ff;
     padding: .5em;
-    border-radius: 5px
+	border-radius: 5px;
+	line-height: 2.5;
 }
 
 @media screen and (max-width: 768px) {
