@@ -1248,7 +1248,9 @@ article.comment-body {
 	margin-left: auto;
     width: 60%;
 	margin-right: auto;
-	font-size: 1.1em;
+	font-size: 0.9em;
+	line-height: 1.4;
+	color: gray;
 }
 
 .author {

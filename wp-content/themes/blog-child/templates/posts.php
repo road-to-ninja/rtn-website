@@ -13,9 +13,11 @@ get_header();
 <div class="page-container">
           <div class="author">
               <img class="author-profil" src=""alt="">
-              <p class="description-site">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                   Nam congue sem eget bibendum rhoncus. Sed eu luctus ligula, in 
-                   fringilla tortor. Vestibulum eget mauris quam. Suspendisse faucibus.</p>
+              <p class="description-site">
+                   <i class="description-site-content">
+                   Hi, this blog has the purpose to share with you information about IT. Feel free to comment posts if you have any suggestion, bugs, etc... , that way you will help other readers and also me. Good reading 😁!
+                    </i>
+               </p>
               <p class="author-links">
                    <a class="link-sources" href="//github.com/blade-sensei" target="_blank" rel="noopener noreferrer">
                          <img class="link-icons" src="<?php bloginfo('template_url')?>/images/github.png"
