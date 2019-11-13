@@ -38,6 +38,12 @@ get_header();
                          sizes="(max-width: 32px) 100vw, 32px"
                          width="32">
                    </a>
+                   <a class="link-sources" href="//www.codewars.com/users/blade-sensei" target="_blank" rel="noopener noreferrer">
+                         <img class="link-icons" src="<?php bloginfo('template_url')?>/images/codewar.png"
+                         alt="codewar"
+                         sizes="(max-width: 32px) 100vw, 32px"
+                         width="32">
+                   </a>
               </p>
           </div>
 
