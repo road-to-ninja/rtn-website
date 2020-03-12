@@ -474,7 +474,6 @@ big {
 body {
 	background: #f5f5ff;
 	min-height:100%; 
-    position:relative;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -992,13 +991,14 @@ custom style
 **/
 
 html {
-	height: 100%;
+	position: relative;
+    min-height: 100%;
 	font-size: 16px;
 }
 body {
 	font-size: 16px;
-	position: relative;
 	height: 100%;
+	margin: 0 0 100px;
 }
 
 .site-header {
@@ -1161,15 +1161,21 @@ input.search-field {
 }
 
 .site-footer {
+	display: table;
 	background-color: #132634;
     color: white;
-	width: 100%;
 	text-align: center;
 	min-height: 40px;
-	vertical-align: middle;
-	bottom: 0;
 	position: absolute;
-	bottom: 0;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.site-info {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .cotent {
